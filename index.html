@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HINDUTANI Paper Agency</title>
+
+  <!-- Script-style font (Dancing Script) -->
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #333;
+      display: flex;
+      min-height: 100vh;
+      background: linear-gradient(135deg, #fdf6e3, #fbeec1, #fdf6e3);
+      background-size: 400% 400%;
+      animation: gradientShift 15s ease infinite;
+    }
+
+    @keyframes gradientShift {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    .sidebar {
+      width: 220px;
+      background: rgba(255, 255, 255, 0.95);
+      padding: 20px;
+      box-shadow: 2px 0 6px rgba(0,0,0,0.1);
+      position: fixed;
+      top: 0;
+      bottom: 0;
+    }
+
+    .sidebar h2 {
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+
+    .sidebar a {
+      display: block;
+      margin-bottom: 12px;
+      color: #4F46E5;
+      text-decoration: none;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .sidebar a:hover {
+      text-decoration: underline;
+    }
+
+    .main {
+      margin-left: 240px;
+      padding: 30px;
+      flex: 1;
+    }
+
+    h1 {
+      text-align: center;
+      font-family: 'Dancing Script', cursive;
+      font-weight: 700;
+      font-size: 3rem;
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.9);
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    button {
+      width: 100%;
+      margin-bottom: 10px;
+      padding: 10px;
+      background-color: #4F46E5;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #3730A3;
+    }
+
+    a {
+      color: #4F46E5;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="sidebar">
+    <h2>Menu</h2>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+    <a href="papers.html" target="_blank">Paper Types</a>
+    <a href="#actions">Quick Actions</a>
+  </div>
+
+  <div class="main">
+    <h1>HINDUTANI Paper Agency</h1>
+
+    <div class="container">
+      <div class="card" id="about">
+        <h2>About</h2>
+        <p>HINDUTANI Paper Agency is a leading distributor of high-quality paper products, serving clients across the nation with commitment and excellence.</p>
+        <p>For more information, click the below link:</p>
+        <a href="https://t.me/YourTelegramLink" target="_blank">Join our Telegram</a>
+      </div>
+
+      <div class="card" id="contact">
+        <h2>Contact</h2>
+        <p>Email: info@hindutanipaper.com</p>
+        <p>Phone: +91-12345-67890</p>
+        <p>Address: 123 Paper Street, Stationery City, India</p>
+      </div>
+
+      <div class="card" id="actions">
+        <h2>Quick Actions</h2>
+        <button>Add New User</button>
+        <button>Generate Report</button>
+        <button>Settings</button>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
